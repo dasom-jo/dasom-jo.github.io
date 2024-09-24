@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "dasom-jo/dasom-jo.github.io" # the subpath of your site, e.g. /blog
 url: "https://dasom-jo.github.io"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  dasom-jo
 
 # Build settings
 theme: minima
