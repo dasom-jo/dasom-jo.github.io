@@ -1,6 +1,6 @@
 //메인페이지
 import Animation from "./components/animation";
-import AboutMe from "./pages/api/about-me";
+import AboutMe from "./pages/about-me";
 //link
 import Link from "next/link"
 export default function Home() {
