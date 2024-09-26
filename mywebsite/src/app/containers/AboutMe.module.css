@@ -1,0 +1,40 @@
+/* 프레임 */
+.frameImg{
+    background-image: url("../public//img/소형프레임.svg");
+    width: 600px;
+    height: 460px;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    cursor: pointer;
+    transform: scale(0.5);  /* 초기상태 */
+    transition : 0.8s ease;
+}
+/* 프레임 줄 */
+.frameLine{
+    background-image: url("../public//img/여러줄.svg");
+    width: 400px;
+    height: 460px;
+}
+/* 마우스 hover 효과---------------------------------------------------------------------- */
+/* 프레임 다운 */
+.frameImg.translate {
+    transform: translateY(200px) scale(0.5); /* translate와 scale 함께 적용 */
+}
+
+/* 프레임 확대 */
+.frameImg.scale {
+    transform: translateY(200px) scale(0.8); /* translateY 유지하면서 scale(1) 적용 */
+}
+
+/* 마우스 leave */
+/* 프레임 축소 */
+.frameImg.translateLeave {
+    transform: translateY(0) scale(0.5); /* 위치 원복하면서 scale(0.5) 적용 */
+}
+
+/* 프레임 상승 */
+.frameImg.scaleLeave {
+    transform: translateY(50px) scale(0.8); /* 위치 원복하면서 scale(1) 적용 */
+}
+

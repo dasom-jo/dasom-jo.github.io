@@ -27,13 +27,17 @@ body {
 }
 /* 전체 배경이미지 */
 .bgImg {
-  background: url('../img/전체배경.png') no-repeat;
+  z-index: 0;
+  /* 배경 이미지와 그라데이션을 함께 설정 */
+  background:
+    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)), /* 회색 그라데이션 */
+    url('../app/public/img/전체배경.png') no-repeat; /* 배경 이미지 */
   min-height: 100vh;
   background-position: bottom; /* 이미지 위치 설정 */
   background-size: cover; /* 배경 이미지 크기를 화면에 맞게 조정 */
   display: flex;
-  justify-content: center; /* 중앙 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 중앙 정렬로 수정 */
+  align-items: top; /* 세로 중앙 정렬로 수정 */
 }
 
 
