@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && next export && gh-pages -d out"
+    "export": "next export"
   },
   "module.exports" : {
     "output": "export"
