@@ -1,3 +1,10 @@
+.frameBox{
+  min-width: 650px;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+}
+
 /* 프레임 줄 */
 .frameLine {
   position: relative;
@@ -7,6 +14,8 @@
   color: black;
   z-index: 2;
   top: -300px;
+  display: flex;
+  transform: translate(50%);
 }
 
 /* 프레임 */
@@ -16,47 +25,45 @@
   width: 600px;
   height: 460px;
   cursor: pointer;
-  transform: scale(0.5); /* 초기상태 */
+  transform:  translate(5%, 30%) scale(0.5); /* 초기상태 */
   transition: 0.8s ease;
   z-index: 5;
-  top: 100px;
-  left: 590px;
 }
 
 /* 마우스 hover 효과---------------------------------------------------------------------- */
 /* 프레임 다운 */
 .frameImg.translate {
-  transform: translateY(200px) scale(0.5);
+  transform: translate(5%, 70%) scale(0.5);
 }
 /* 프레임 확대 */
 .frameImg.scale {
-  transform: translateY(200px) scale(0.8);
+  transform: translate(5%, 70%) scale(0.8);
 }
 /* 프레임줄 다운 */
 .frameLine.translateLine {
-    transform: translateY(200px);
+  transform: translate(50%,150px);
 }
 /* 프레임줄 확대 */
 .frameLine.scaleLine {
-  transform: translateY(200px) scale(1.3);
+  transform: translate(50%,150px) scale(1.3);
   transition: 0.8s ease;
 }
 
 /* 마우스 leave------------------------------ */
 /* 프레임 축소 */
 .frameImg.translateLeave {
-  transform: translateY(0) scale(0.5);
+  transform: translate(5%, 30%) scale(0.5);
 }
 /* 프레임 상승 크기 변동없음*/
 .frameImg.scaleLeave {
-    transform: translateY(50px) scale(0.8);
+    transform: translate(5%, 30%) scale(0.8);
 }
 /* 프레임줄 상승 */
 .frameLine.translateLineLeave {
-    transform: translateY(0) scale(1.3) ;
+    transform: translate(50%,150px) scale(1.3) ;
 }
 /* 프레임줄 축소 */
 .frameLine.scaleLineLeave {
-  transform: translateY(0) scale(1) ;
+  transform: translate(50%,150px) scale(1) ;
 }
 

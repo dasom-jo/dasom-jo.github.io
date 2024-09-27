@@ -6,12 +6,13 @@ const AboutMe = () => {
   const frameImgRef = useRef(null); // 프레임 이미지 ref
   const frameLineRef = useRef(null); // 프레임 줄 ref
 
+  //frame 확대
   const handleMouseEnter = () => {
     if (frameImgRef.current && frameLineRef.current) {
       frameImgRef.current.classList.add(styles.translate); // 프레임 다운 크기변동없음
       frameLineRef.current.classList.add(styles.translateLine); // 프레임 줄 다운 크기변동없음
 
-      // scale이 끝난 후 translateY 적용
+      // scale이 끝난 후 translateY 적용()
       setTimeout(() => {
         frameImgRef.current.classList.add(styles.scale); //프레임 확대 위치변동없음
         frameLineRef.current.classList.add(styles.scaleLine)//프레임줄 확대 위치변동없음
@@ -21,8 +22,8 @@ const AboutMe = () => {
     }
   };
 
+  //커진 frame 원상복구 시킬때
   const handleMouseLeave = () => {
-    //커진 frame 원상복구 시킬때
     // 클릭 시 scaleLeave 추가
     frameImgRef.current.classList.add(styles.scaleLeave);//프레임 상승 크기 크기 변동없음
     frameLineRef.current.classList.add(styles.translateLineLeave); //프레임 줄 상승 크기 변동없음
@@ -39,7 +40,7 @@ const AboutMe = () => {
           frameImgRef.current.classList.remove(styles.scale);
           //프레임 줄에 선언되는 클래스 이름 전부 초기화
           frameLineRef.current.classList.remove(styles.translateLine);
-          frameLineRef.current.classList.remove(styles.translateLineLeave); 
+          frameLineRef.current.classList.remove(styles.translateLineLeave);
           frameLineRef.current.classList.remove(styles.scaleLine);
           frameLineRef.current.classList.remove(styles.scaleLineLeave);
         }, 800);
@@ -47,7 +48,7 @@ const AboutMe = () => {
   };
 
   return (
-    <>
+    <div className={styles.frameBox}>
       {/* 프레임에 달린 줄 */}
       <div
         className={styles.frameLine}
@@ -61,7 +62,7 @@ const AboutMe = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       ></div>
-    </>
+    </div>
   );
 };
 
