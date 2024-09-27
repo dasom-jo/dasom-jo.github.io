@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'HSBombaram21-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,6 +19,7 @@
 
 html,
 body {
+  font-family: 'HSBombaram21-Regular';
   margin: 0;
   padding: 0;
   max-width: 100vw;
@@ -22,7 +30,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -41,7 +48,6 @@ body {
   justify-content:center; /* 중앙 정렬로 수정 */
   align-items: top; /* 세로 중앙 정렬로 수정 */
 }
-
 
 * {
   box-sizing: border-box;

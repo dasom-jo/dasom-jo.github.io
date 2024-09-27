@@ -1,3 +1,16 @@
+@keyframes slogan {
+  0% {
+    opacity: 1; /* 슬로건이 완전히 보임 */
+  }
+  50% {
+    opacity: 0; /* 슬로건이 완전히 사라짐 */
+  }
+  100% {
+    opacity: 1; /* 슬로건이 다시 완전히 보임 */
+  }
+}
+
+/* 프레임과 줄 전체 */
 .frameBox{
   min-width: 650px;
   width: 100%;
@@ -8,7 +21,7 @@
 /* 프레임 줄 */
 .frameLine {
   position: relative;
-  background-image: url("../public//img/여러줄.svg");
+  background-image: url("../public/img/여러줄.svg");
   width: 400px;
   height: 600px;
   color: black;
@@ -17,27 +30,60 @@
   display: flex;
   transform: translate(50%);
 }
-
 /* 프레임 */
 .frameImg {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background-image: url("../public//img/소형프레임.svg");
+  background: url("../public/img/대형프레임.svg") no-repeat ;
   width: 600px;
   height: 460px;
   cursor: pointer;
-  transform:  translate(5%, 30%) scale(0.5); /* 초기상태 */
+  transform:  translate(5%, 30%) scale(0.6); /* 초기상태 */
   transition: 0.8s ease;
   z-index: 5;
+}
+/* 글자 */
+.frameText {
+  position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+  color: white;
+  top: 30%; /* 부모 요소의 가운데에 배치 */
+  left: 50%; /* 부모 요소의 가운데에 배치 */
+  transform: translate(4%, -50%); /* 가운데 정렬을 위한 변환 */
+  font-size:70px;
+}
+/* 해시태그 */
+.frameHash{
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-10%, 100%);
+  font-size:25px;
+}
+/* 증명사진 */
+.framePhoto{
+  background-image: url("../public/img/조다솜증사.png");
+  width:430px;
+  height: 500px;
+  transform: translate(-13%, -15%)  scale(0.4);
+}
+/* 슬러건 */
+.slogan{
+  position: absolute;
+  color: white;
+  transform: translate(55%, -500%) scale(1.6);
+  font-size:25px;
+  animation: slogan 3s ease-in-out infinite;
 }
 
 /* 마우스 hover 효과---------------------------------------------------------------------- */
 /* 프레임 다운 */
 .frameImg.translate {
-  transform: translate(5%, 70%) scale(0.5);
+  transform: translate(5%, 70%) scale(0.6);
+  animation: framebox 3s ease-in-out infinite;
 }
 /* 프레임 확대 */
 .frameImg.scale {
-  transform: translate(5%, 70%) scale(0.8);
+  transform: translate(5%, 70%) scale(1);
 }
 /* 프레임줄 다운 */
 .frameLine.translateLine {
@@ -52,11 +98,11 @@
 /* 마우스 leave------------------------------ */
 /* 프레임 축소 */
 .frameImg.translateLeave {
-  transform: translate(5%, 30%) scale(0.5);
+  transform: translate(5%, 30%) scale(0.6);
 }
 /* 프레임 상승 크기 변동없음*/
 .frameImg.scaleLeave {
-    transform: translate(5%, 30%) scale(0.8);
+    transform: translate(5%, 30%) scale(1.0);
 }
 /* 프레임줄 상승 */
 .frameLine.translateLineLeave {

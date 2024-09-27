@@ -61,7 +61,17 @@ const AboutMe = () => {
         ref={frameImgRef} // 프레임 이미지 ref 연결
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-      ></div>
+      >
+        <div className={styles.framePhoto}></div>
+        <span className={styles.frameText}>
+          조다솜
+        </span>
+        <span className={styles.frameHash}>
+          #열정 #협업 #성장갈망<br/>
+          #강한 경기도인 #파워 J
+        </span>
+        <sapn className={styles.slogan}>"성장을 갈망하는 개발자"</sapn>
+      </div>
     </div>
   );
 };
