@@ -1,0 +1,103 @@
+.contactBox{
+    width: 50px;
+    height: 50px;
+    perspective: 1200px;
+    overflow: visible; /* 부모 요소가 자식의 overflow를 허용하도록 설정!!!! */
+}
+
+/* 프레임줄 */
+.contactFrameLine{
+    position: relative; /* top 속성을 적용하기 위해 relative 사용 */
+    background-image: url("../public//img/줄1.svg");
+    width: 50px;
+    height: 700px;
+    top: -700px;
+    display: flex;
+    transform: translate(-500%);
+    z-index: 7;
+    transition: 0.5s ease;
+    }
+/* 프레임 */
+.contactFrameImg{
+    position: absolute; /* 겹치기 위해 절대 위치 사용 */
+    background: url("../public/img/대형프레임.svg") no-repeat ;
+    width: 600px;
+    height: 460px;
+    top: -200px; /* 부모 요소의 세로 중간에 배치 */
+    left: -500px;
+    transform:rotateY(40deg) translateZ(100px) scale(0.7); /* Y축으로 회전하고 Z축으로 이동 */
+    transform-style: preserve-3d; /* 3D 효과를 유지 */
+    transition: 0.5s ease;
+    z-index: 5;
+}
+/* 프레임 상단에서 hover*/
+.contactFrameImg:hover {
+    transform: rotateY(30deg)translateZ(100px) scale(0.7); /* Y축 회전 제거, Z축으로 더 나옴 */
+   }
+
+/* 프레임 click */
+/* 프레임 하강 */
+.contactFrameImg.clickFrame{
+    transform:rotateY(0deg) translateY(300px) scale(0.8);
+    transition: 0.8s ease;
+}
+/* 프레임 하단에서 hover/*/
+.contactFrameImg.clickFrame:hover{
+    transform:rotateY(7deg) translateY(300px) scale(0.8);
+}
+/* 프레임줄 하강 */
+.contactFrameLine.clickFrameLine{
+    transform:translate(-450%, 22%) scale(1);
+    transition: 0.8s ease;
+}
+/* 프레임줄 하단에서 hover*/
+.contactFrameLine.clickFrameLine:hover{
+    transform:rotateY(5deg) translate(-450%, 22%) scale(1);
+}
+
+/* 연락처 상단 텍스트 */
+.contactAddr{
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    transform:rotateY(3deg) translate(-7%,20%) translateZ(100px) translateY(100px) scale(0.9);
+    transition: transform 0.5s ease;
+}
+/* 프레임 하단 텍스트*/
+.contactAddr.clickFrameText{
+    transform: translate(10%,50%);
+    margin-bottom:15px;
+}
+/* 프레임 상단에서 hover시 연락처 텍스트로 같이 이동 */
+.contactFrameImg:hover .contactAddr {
+    transform: translate(2%,20%) translateZ(100px) translateY(100px) scale(0.9);
+    transition: transform 0.7s ease;
+}
+/* 프레임 하단에서  hover시 텍스트 이동 */
+.contactFrameImg.clickFrame:hover .contactAddr {
+    transform: translate(10%,50%);
+    transition: transform 0.8s ease;
+}
+/* 연락처 오픈버튼 제외한 주소텍스트 */
+.contactAddr p{
+    transform:translateY(10px);
+    margin-bottom:15px;
+    transition: transform 0.5s ease;
+}
+
+/* 연락처 오픈 버튼 */
+.contactBtn{
+    color: white;
+    font-size: 25px;
+    transform: translate(13%,550%);
+}
+/* 닫기버튼 */
+.closeBtn{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    transform: translate(75%,450%);
+}
+

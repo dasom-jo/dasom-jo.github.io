@@ -17,7 +17,7 @@ const AboutMe = () => {
         frameImgRef.current.classList.add(styles.scale); //프레임 확대 위치변동없음
         frameLineRef.current.classList.add(styles.scaleLine)//프레임줄 확대 위치변동없음
       }, 800);
-    } else {
+    } else { 
       console.error("frameImgRef 또는 frameLineRef가 존재하지 않습니다.");
     }
   };

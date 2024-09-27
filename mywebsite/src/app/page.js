@@ -2,16 +2,13 @@
 import Animation from "./components/animation";
 import Link from "next/link";
 import AboutMe from "./containers/AboutMe";
+import Contact from "./containers/Contact";
 
 const Home = () => {
   return (
-    <div>
+    <div className="grid-container">
+      <Contact/>
       <AboutMe />
-      {/* <Link href={"https://transparent-drop-0f2.notion.site/..."}>
-        <button style={{ height: "700px", backgroundColor: 'yellow', width: "700px" }}>
-          포트폴리오가는 버튼
-        </button>
-      </Link> */}
     </div>
   );
 }
