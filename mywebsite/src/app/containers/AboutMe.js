@@ -17,7 +17,7 @@ const AboutMe = () => {
         frameImgRef.current.classList.add(styles.scale); //프레임 확대 위치변동없음
         frameLineRef.current.classList.add(styles.scaleLine)//프레임줄 확대 위치변동없음
       }, 800);
-    } else { 
+    } else {
       console.error("frameImgRef 또는 frameLineRef가 존재하지 않습니다.");
     }
   };
@@ -67,8 +67,8 @@ const AboutMe = () => {
           조다솜
         </span>
         <span className={styles.frameHash}>
-          #열정 #협업 #성장갈망<br/>
-          #강한 경기도인 #파워 J
+          ### ### #####<br/>
+          ######## #####
         </span>
         <sapn className={styles.slogan}>"성장을 갈망하는 개발자"</sapn>
       </div>

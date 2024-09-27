@@ -26,6 +26,12 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+/* 스크롤 - 모바일 */
+@media (max-width: 500px) {
+  body {
+    overflow-y: auto;
+  }
+}
 
 body {
   color: var(--foreground);
