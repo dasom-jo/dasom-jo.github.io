@@ -22,7 +22,8 @@ const Contact = () => {
         clickTextRef.current.classList.remove(styles.clickFrameText)//텍스트 위치 원상복귀
         setIsFrameClicked(false)//닫기버튼 제거
     }
-    // 클릭 이벤트로 닫기 버튼을 제어하는 예시
+
+    // 클릭 이벤트로 닫기 버튼을 제어
     const handleClose = (event) => {
         event.stopPropagation(); // 부모 요소의 클릭 이벤트를 차단
         handleFrameClose(); // 프레임 닫기 처리
@@ -70,11 +71,11 @@ const Contact = () => {
                 </div>
                 {isFrameClicked?
                 <div className={styles.closeBtn} onClick={handleClose }>
-                    CLOSE
+                    &lt;FRAME UP/&gt;
                 </div>
                 :
                 <div className={styles.closeBtn}>
-                    OPEN
+                    &lt;DOWN/&gt;
                 </div>
                 }
 
