@@ -19,24 +19,24 @@
   }
 }
 
-
 .contactBox {
   width: 50px;
   height: 50px;
   perspective: 1200px;
   overflow: visible; /* 부모 요소가 자식의 overflow를 허용하도록 설정!!!! */
+  z-index: 5;
+  position: relative;
 }
 
 /* 프레임줄 */
 .contactFrameLine {
-  position: relative; /* top 속성을 적용하기 위해 relative 사용 */
+  position: absolute;
   background-image: url("../public//img/줄1.svg");
   width: 50px;
   height: 700px;
   top: -700px;
   display: flex;
   transform: translate(-500%);
-  z-index: 7;
   transition: 0.5s ease;
 }
 /* 프레임 줄 - 모바일 */
@@ -59,10 +59,9 @@
   transform: rotateY(40deg) translateZ(100px) scale(0.7); /* Y축으로 회전하고 Z축으로 이동 */
   transform-style: preserve-3d; /* 3D 효과를 유지 */
   transition: 0.5s ease;
-  z-index: 5;
 }
 /* 프레임 - 모바일 */
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .contactFrameImg {
     width: 600px;
     height: 460px;
@@ -76,16 +75,16 @@
   transform: rotateY(30deg) translateZ(100px) scale(0.7); /* Y축 회전 제거, Z축으로 더 나옴 */
 }
 /* 프라임 상단에서 hover변경 과  프레임 줄 상승 --모바일 */
-@media (max-width: 500px){
-    .contactFrameImg:hover{
-        transform: scale(0.7);
-    }
-    .contactFrameLine {
-        top: -10; /* 살짝 상승 */
-    }
-    .contactFrameLine:hover {
-        top: -20; /* 살짝 상승 */
-    }
+@media (max-width: 500px) {
+  .contactFrameImg:hover {
+    transform: scale(0.7);
+  }
+  .contactFrameLine {
+    top: -10; /* 살짝 상승 */
+  }
+  .contactFrameLine:hover {
+    top: -20; /* 살짝 상승 */
+  }
 }
 
 /* 프레임 click */
@@ -99,15 +98,15 @@
   transform: rotateY(7deg) translateY(300px) scale(0.8);
 }
 /* 프레임 click 제거 ---모바일 */
-@media(max-width: 500px){
-    .contactFrameImg.clickFrame {
-        transform:scale(0.6);
-        pointer-events: none;
-      }
-      /* 프레임 하단에서 hover/*/
-      .contactFrameImg.clickFrame:hover {
-        transform: scale(0.6);
-      }
+@media (max-width: 500px) {
+  .contactFrameImg.clickFrame {
+    transform: scale(0.6);
+    pointer-events: none;
+  }
+  /* 프레임 하단에서 hover/*/
+  .contactFrameImg.clickFrame:hover {
+    transform: scale(0.6);
+  }
 }
 /* 프레임줄 하강 */
 .contactFrameLine.clickFrameLine {
@@ -119,13 +118,14 @@
   transform: rotateY(5deg) translate(-450%, 22%) scale(1);
 }
 /*프레임 줄 click,hover 제거 - 모바일 */
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .contactFrameLine.clickFrameLine {
     width: 50px;
     height: 700px;
     top: -70%;
     transform: translate(590%);
-  }.contactFrameLine.clickFrameLine:hover {
+  }
+  .contactFrameLine.clickFrameLine:hover {
     width: 50px;
     height: 700px;
     top: -70%;
@@ -143,18 +143,17 @@
 }
 /* 프레임 하단 텍스트*/
 .contactAddr.clickFrameText {
-  transform: translate(10%, 50%) ;
+  transform: translate(10%, 50%);
   margin-bottom: 15px;
 }
 /* 프레임 텍스트/hover 제거 - 모바일 */
-@media (max-width: 500px){
-    .contactAddr{
-        transform: translate(10%,50%);
-        z-index: 8;
-    }
-      .closeBtn{
-        display: none;
-      }
+@media (max-width: 500px) {
+  .contactAddr {
+    transform: translate(10%, 50%);
+  }
+  .closeBtn {
+    display: none;
+  }
 }
 /* 연락처 오픈버튼 제외한 주소텍스트 */
 .contactAddr p {

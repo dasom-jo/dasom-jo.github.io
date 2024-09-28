@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'HSBombaram21-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-family: "HSBombaram21-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +20,7 @@
 
 html,
 body {
-  font-family: 'HSBombaram21-Regular';
+  font-family: "HSBombaram21-Regular";
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -44,16 +45,17 @@ body {
   z-index: 0;
   /* 배경 이미지와 그라데이션을 함께 설정 */
   background:
-    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)), /* 회색 그라데이션 */
-    url('../app/public/img/전체배경.png') no-repeat; /* 배경 이미지 */
+    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)),
+    /* 회색 그라데이션 */ url("../app/public/img/전체배경.png") no-repeat; /* 배경 이미지 */
   min-height: 100vh;
   background-position: bottom; /* 이미지 위치 설정 */
   background-size: cover; /* 배경 이미지 크기를 화면에 맞게 조정 */
   display: flex;
-  justify-content:center; /* 중앙 정렬로 수정 */
+  justify-content: center; /* 중앙 정렬로 수정 */
   align-items: top; /* 세로 중앙 정렬로 수정 */
 }
-grid-container{
+
+grid-container {
   display: inline;
 }
 
