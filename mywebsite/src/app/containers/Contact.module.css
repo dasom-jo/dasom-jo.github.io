@@ -54,7 +54,7 @@
   background: url("../public/img/대형프레임.svg") no-repeat;
   width: 600px;
   height: 460px;
-  top: -200px; /* 부모 요소의 세로 중간에 배치 */
+  top: -270px; /* 부모 요소의 세로 중간에 배치 */
   left: -500px;
   transform: rotateY(40deg) translateZ(100px) scale(0.7); /* Y축으로 회전하고 Z축으로 이동 */
   transform-style: preserve-3d; /* 3D 효과를 유지 */

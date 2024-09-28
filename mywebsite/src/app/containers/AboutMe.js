@@ -62,6 +62,7 @@ const AboutMe = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
+        <h1 className={styles.frameTitle}>About Me</h1>
         <div className={styles.framePhoto}></div>
         <span className={styles.frameText}>조다솜</span>
         <span className={styles.frameHash}>
