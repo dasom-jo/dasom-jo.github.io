@@ -110,7 +110,7 @@
 }
 /* 프레임줄 하강 */
 .contactFrameLine.clickFrameLine {
-  transform: translate(-450%, 22%) scale(1);
+  transform: translate(-450%, 12%) scale(1);
   transition: 0.8s ease;
 }
 /* 프레임줄 하단에서 hover*/

@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 import styles from "./AboutMe.module.css";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const AboutMe = () => {
   const frameImgRef = useRef(null); // 프레임 이미지 ref
@@ -24,7 +25,8 @@ const AboutMe = () => {
 
   //커진 frame 원상복구 시킬때
   const handleMouseLeave = () => {
-    // 클릭 시 scaleLeave 추가
+    if(frameImgRef.current && frameLineRef.current){
+          // 클릭 시 scaleLeave 추가
     frameImgRef.current.classList.add(styles.scaleLeave); //프레임 상승 크기 크기 변동없음
     frameLineRef.current.classList.add(styles.translateLineLeave); //프레임 줄 상승 크기 변동없음
     // 애니메이션 종료 후 translateLeave 추가
@@ -45,6 +47,9 @@ const AboutMe = () => {
         frameLineRef.current.classList.remove(styles.scaleLineLeave);
       }, 800);
     }, 800);
+    }else {
+      console.warn("에러");
+    }
   };
 
   return (
@@ -71,6 +76,9 @@ const AboutMe = () => {
           #디테일 #도전 #책임
         </span>
         <sapn className={styles.slogan}>"성장을 갈망하는 개발자"</sapn>
+        <div className={styles.open}>
+          <ArrowDownwardIcon/>
+        </div>
       </div>
     </div>
   );

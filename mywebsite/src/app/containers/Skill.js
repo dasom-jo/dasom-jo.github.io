@@ -20,19 +20,19 @@ const Skill = () => {
         <h1 className={styles.mySkill}>My Skill </h1>
         <div className={styles.techStack}>
           {/* 언어 */}
-          <div>languages</div>
+          <div className={styles.title}>languages</div>
           <div className={styles.stackBox}>
-          <div class={styles.techItem}>
+            <div class={styles.techItem}>
               <img
                 src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
                 alt="HTML"
               />
               <span>HTML</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -40,11 +40,11 @@ const Skill = () => {
                 alt="CSS"
               />
               <span>CSS</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -52,11 +52,11 @@ const Skill = () => {
                 alt="JavaScript"
               />
               <span>JavaScript</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -64,27 +64,27 @@ const Skill = () => {
                 alt="TypeScript"
               />
               <span>TypeScript</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
           </div>
           {/* 프레임워크 */}
-          <div>frameworks</div>
+          <div className={styles.title}>frameworks</div>
           <div className={styles.stackBox}>
-          <div class={styles.techItem}>
+            <div class={styles.techItem}>
               <img
                 src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000"
                 alt="React.js"
               />
               <span>React.js</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -92,11 +92,11 @@ const Skill = () => {
                 alt="Next.js"
               />
               <span>Next.js</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -104,27 +104,27 @@ const Skill = () => {
                 alt="Node.js"
               />
               <span>Node.js</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
           </div>
           {/* 라이브러리 */}
-          <div>librarys</div>
+          <div className={styles.title}>librarys</div>
           <div className={styles.stackBox}>
-          <div class={styles.techItem}>
+            <div class={styles.techItem}>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6PFxvK8trITmeOdN5228XIl67eOCMYoi3g&s"
                 alt="Recoil"
               />
               <span>Recoil</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -132,11 +132,11 @@ const Skill = () => {
                 alt="Redux Toolkit"
               />
               <span>Redux Toolkit</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -144,11 +144,11 @@ const Skill = () => {
                 alt="React Query"
               />
               <span>React Query</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -156,11 +156,11 @@ const Skill = () => {
                 alt="SCSS"
               />
               <span>SCSS</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -168,27 +168,27 @@ const Skill = () => {
                 alt="TailwindCSS"
               />
               <span>TailwindCSS</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
           </div>
           {/* 그외 */}
-          <div>etc</div>
+          <div className={styles.title}>etc</div>
           <div className={styles.stackBox}>
-          <div class={styles.techItem}>
+            <div class={styles.techItem}>
               <img
                 src="https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000"
                 alt="Bootstrap"
               />
               <span>Bootstrap</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -196,11 +196,11 @@ const Skill = () => {
                 alt="MUI"
               />
               <span>MUI</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -208,11 +208,11 @@ const Skill = () => {
                 alt="Figma"
               />
               <span>Figma</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
             <div class={styles.techItem}>
               <img
@@ -220,13 +220,13 @@ const Skill = () => {
                 alt="MySQL"
               />
               <span>MySQL</span>
-              {handleDescription?
+              {handleDescription ? (
                 <div>어느정도합니다 이정도는 할걸요 그럴걸요???</div>
-                :
+              ) : (
                 ""
-              }
+              )}
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>

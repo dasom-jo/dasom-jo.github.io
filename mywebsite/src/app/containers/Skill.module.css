@@ -42,6 +42,11 @@
 .mySkill {
   color: white;
 }
+.title{
+  color: white; /* 텍스트 색상 */
+  font-size: 15px; /* 적절한 폰트 크기 설정 */
+
+}
 /* 아이콘 전체 */
 .techStack {
   cursor: pointer;
@@ -50,8 +55,8 @@
   display:grid;
   grid-column: (4,1fr);
   flex-wrap: wrap;
-  gap: 15px;
-  transform: translate(50px, 10px) translateZ(10px) rotateY(2deg);
+  gap: 10px;
+  transform: translate(50px, 20px) translateZ(10px) rotateY(2deg);
 }
 /* 각 아이콘 DIV */
 .stackBox {

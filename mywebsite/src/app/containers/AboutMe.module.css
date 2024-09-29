@@ -73,9 +73,15 @@
 .slogan {
   position: absolute;
   color: white;
-  transform: translate(55%, -600%) scale(1.6);
+  transform: translate(55%, -710%) scale(1.6);
   font-size: 25px;
   animation: slogan 3s ease-in-out infinite;
+}
+
+.open{
+  color:white;
+  transform: translate(75%, -500%) scale(1.6);
+  
 }
 
 /* 마우스 hover 효과---------------------------------------------------------------------- */
