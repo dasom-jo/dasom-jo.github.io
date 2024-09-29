@@ -14,6 +14,7 @@
   transform-style: preserve-3d; /* 3D 효과를 유지 */
   transition: 0.5s ease;
   z-index: 3;
+  will-change: transform;
 }
 /* 프레임줄 기본 좌측 */
 .frameLineLeft {
@@ -41,25 +42,38 @@
 .mySkill {
   color: white;
 }
+/* 아이콘 전체 */
 .techStack {
   cursor: pointer;
   font-size: 10px;
   color: white;
-  display: flex;
+  display:grid;
+  grid-column: (4,1fr);
   flex-wrap: wrap;
-  gap: 10px; /* 아이콘 간격 */
+  gap: 15px;
   transform: translate(50px, 10px) translateZ(10px) rotateY(2deg);
 }
+/* 각 아이콘 DIV */
+.stackBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+/* 아이콘 텍스트 */
 .techItem {
   display: flex;
   align-items: center;
-  margin: 3px;
   padding: 3px;
+  margin: 3PX;
 }
+/* 아이콘 이미지 */
 .techItem img {
   width: 30px;
   height: 40px;
-  margin-right: 15px; /* 아이콘과 텍스트 간의 간격 */
+  margin-right: 5px;
 }
 
 /* hover------------------------------------------------------------------------------------------------------------------- */
@@ -111,12 +125,12 @@
   top: -30px; /* 원하는 Y 위치 */
   left: 480px;
 }
-/* 아이콘 클릭시 확대
-.techItem:active {
+/* 아이콘 클릭시 확대 */
+.techItem.activeTechItem {
   transform: translate(50px, -20px) rotateY(20deg) translateZ(20px) scale(2);
   background-color: white;
   color: black;
-} */
+}
 
 /* 펑 터지는 애니메이션 */
 @keyframes explosion {
