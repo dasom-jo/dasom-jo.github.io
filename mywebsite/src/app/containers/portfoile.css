@@ -16,7 +16,6 @@
   width: 100%;
   max-width: 100vw;
   display: flex;
-  position: relative;
 }
 
 /* 프레임 줄 */
@@ -37,7 +36,7 @@
   background: url("../public/img/대형프레임.svg") no-repeat;
   width: 600px;
   height: 460px;
-  transform: translate(5%, -10%) scale(0.6); /* 초기상태 */
+  transform: translate(5%, 10%) scale(0.6); /* 초기상태 */
   transition: 0.8s ease;
   z-index: 5;
 }
@@ -48,7 +47,7 @@
 /* 글자 */
 .frameText {
   position: absolute; /* 부모 요소를 기준으로 위치 설정 */
-  color:   white;
+  color: white;
   top: 30%; /* 부모 요소의 가운데에 배치 */
   left: 50%; /* 부모 요소의 가운데에 배치 */
   transform: translate(4%, -50%); /* 가운데 정렬을 위한 변환 */
@@ -57,7 +56,7 @@
 /* 해시태그 */
 .frameHash {
   position: absolute;
-  color: #71c4e0;
+  color: white;
   top: 30%;
   left: 50%;
   transform: translate(-10%, 100%);
@@ -79,30 +78,60 @@
   animation: slogan 3s ease-in-out infinite;
 }
 
-/* .howIWork 프레임 */
-.howIWork{
-  position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background: url("../public/img/세로\ 프레임.svg") no-repeat;
-  width: 600px;
-  height: 500px;
-  transform: translate(33%, 20%) scale(1.67); /* 초기상태 */
-  transition: 0.8s ease;
-  z-index: 0;
+.open {
   color: white;
+  transform: translate(75%, -500%) scale(1.6);
+  cursor: pointer;
 }
 
-.howStory{
-  transform: translate(50px, 20%)
+/* 마우스 hover 효과---------------------------------------------------------------------- */
+/* 프레임 다운 */
+.frameImg.translate {
+  transform: translate(5%, 70%) scale(0.6);
+  animation: framebox 3s ease-in-out infinite;
+}
+/* 프레임 확대 */
+.frameImg.scale {
+  transform: translate(5%, 70%) scale(1);
+}
+/* 프레임 확대 - 모바일  */
+@media (max-width: 500px) {
+  .frameImg.scale {
+    transform: translate(5%, 70%) scale(0.8);
+  }
+}
+/* 프레임줄 다운 */
+.frameLine.translateLine {
+  transform: translate(50%, 150px);
+}
+/* 프레임줄 확대 */
+.frameLine.scaleLine {
+  transform: translate(50%, 150px) scale(1.3);
+  transition: 0.8s ease;
 }
 
-.howStory p {
-  transform: translate(-20px, -45px);
-  margin-bottom: 20px;
-  text-wrap: wrap;
-  max-width: 250px;
-  margin: 20px;
+/* 마우스 leave------------------------------ */
+/* 프레임 축소 */
+.frameImg.translateLeave {
+  transform: translate(5%, 30%) scale(0.6);
+}
+/* 프레임 상승 크기 변동없음*/
+.frameImg.scaleLeave {
+  transform: translate(5%, 30%) scale(1);
+}
+/* 프레임 확대 - 모바일 */
+@media (max-width: 500px) {
+  .frameImg.scaleLeave {
+    transform: translate(5%, 30%) scale(0.8);
+  }
+}
+/* 프레임줄 상승 */
+.frameLine.translateLineLeave {
+  transform: translate(50%, 150px) scale(1.3);
+}
+/* 프레임줄 축소 */
+.frameLine.scaleLineLeave {
+  transform: translate(50%, 150px) scale(1);
 }
 
-.howStory .highlight {
-  color:  #71c4e0; /* 강조하고 싶은 단어에 금색 적용 */
-}
+/* 모바일 버전 425px--------------------------------------------------- */
