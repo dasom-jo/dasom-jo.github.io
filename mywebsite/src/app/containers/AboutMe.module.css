@@ -48,7 +48,7 @@
 /* 글자 */
 .frameText {
   position: absolute; /* 부모 요소를 기준으로 위치 설정 */
-  color:   white;
+  color: white;
   top: 30%; /* 부모 요소의 가운데에 배치 */
   left: 50%; /* 부모 요소의 가운데에 배치 */
   transform: translate(4%, -50%); /* 가운데 정렬을 위한 변환 */
@@ -80,7 +80,7 @@
 }
 
 /* .howIWork 프레임 */
-.howIWork{
+.howIWork {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
   background: url("../public/img/세로\ 프레임.svg") no-repeat;
   width: 600px;
@@ -91,8 +91,8 @@
   color: white;
 }
 
-.howStory{
-  transform: translate(50px, 20%)
+.howStory {
+  transform: translate(50px, 20%);
 }
 
 .howStory p {
@@ -104,5 +104,5 @@
 }
 
 .howStory .highlight {
-  color:  #71c4e0; /* 강조하고 싶은 단어에 금색 적용 */
+  color: #71c4e0; /* 강조하고 싶은 단어에 금색 적용 */
 }

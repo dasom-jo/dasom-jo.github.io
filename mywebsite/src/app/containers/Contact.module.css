@@ -164,7 +164,7 @@
 
 /* 연락처 오픈 버튼 */
 .contactBtn {
-  color:  #FFD700;
+  color: #ffd700;
   font-size: 25px;
   transform: translate(13%, 500%);
 }
@@ -173,7 +173,7 @@
   width: auto;
   height: auto;
   cursor: pointer;
-  color:  #FFD700;
+  color: #ffd700;
   font-size: 25px;
   transform: translate(65%, 400%);
   animation: Btn 0.5s ease infinite;
