@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import styles from "./AboutMe.module.css";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
-const AboutMe = () => {
+const Portfoile = () => {
   const frameImgRef = useRef(null); // 프레임 이미지 ref
   const frameLineRef = useRef(null); // 프레임 줄 ref
 
@@ -84,4 +84,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Portfoile;

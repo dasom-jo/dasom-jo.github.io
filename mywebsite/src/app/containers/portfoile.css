@@ -29,6 +29,7 @@
   top: -300px;
   display: flex;
   transform: translate(50%);
+  background-color: red;
 }
 /* 프레임 */
 .frameImg {
@@ -36,7 +37,7 @@
   background: url("../public/img/대형프레임.svg") no-repeat;
   width: 600px;
   height: 460px;
-  transform: translate(5%, 10%) scale(0.6); /* 초기상태 */
+  transform: translate(5%, 100%) scale(0.6); /* 초기상태 */
   transition: 0.8s ease;
   z-index: 5;
 }

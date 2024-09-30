@@ -1,8 +1,7 @@
 // Home.js
-import Animation from "./components/animation";
-import Link from "next/link";
 import AboutMe from "./containers/AboutMe";
 import Contact from "./containers/Contact";
+import Portfoile from "./containers/portfoile";
 import Skill from "./containers/Skill";
 
 const Home = () => {
@@ -11,6 +10,7 @@ const Home = () => {
       <Contact/>
       <AboutMe />
       <Skill/>
+      <Portfoile/>
     </div>
   );
 }
