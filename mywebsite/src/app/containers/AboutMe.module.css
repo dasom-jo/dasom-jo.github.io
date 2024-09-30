@@ -29,9 +29,11 @@
   top: -300px;
   display: flex;
   transform: translate(50%);
+  background-color: red;
 }
 /* 프레임 */
 .frameImg {
+  background-color: red;
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
   background: url("../public/img/대형프레임.svg") no-repeat;
   width: 600px;
@@ -46,6 +48,7 @@
 }
 /* 글자 */
 .frameText {
+  background-color: red;
   position: absolute; /* 부모 요소를 기준으로 위치 설정 */
   color: white;
   top: 30%; /* 부모 요소의 가운데에 배치 */
@@ -78,10 +81,10 @@
   animation: slogan 3s ease-in-out infinite;
 }
 
-.open{
-  color:white;
+.open {
+  color: white;
   transform: translate(75%, -500%) scale(1.6);
-  
+  cursor: pointer;
 }
 
 /* 마우스 hover 효과---------------------------------------------------------------------- */
