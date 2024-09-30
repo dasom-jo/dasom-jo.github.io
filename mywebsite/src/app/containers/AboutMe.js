@@ -1,7 +1,6 @@
 "use client";
-import { useRef, useEffect } from "react";
 import styles from "./AboutMe.module.css";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
 
 const AboutMe = () => {
   return (
@@ -19,38 +18,23 @@ const AboutMe = () => {
           <br />
           #디테일 #도전 #책임
         </span>
-        <sapn className={styles.slogan}>"성장을 갈망하는 개발자"</sapn>
+        <span className={styles.slogan}>성장을 갈망하는 개발자</span>
         {/* <div className={styles.open}>
           <ArrowDownwardIcon/>
         </div> */}
         <div className={styles.howIWork}>
           <h2 className={styles.howTitle}>how I work ?</h2>
-          <div className={styles.howStory}>
+          <div  className={styles.howStory}>
+            <p>목표 달성도 중요하지만 <span className={styles.highlight}>일의 과정</span>에서 재미를 찾는 편이에요.</p>
             <p>
-              목표 달성도 중요하지만{" "}
-              <span className={styles.highlight}>일의 과정</span>에서 재미를
-              찾는 편이에요.
+              회사와 동료에게 긍정적 영향을 주는 일은 그 자체로  <span className={styles.highlight}>동기부여</span>가
+              됩니다.
             </p>
+            <p><span className={styles.highlight}>문제해결에</span> 큰 성취감과 재미를 느낍니다.</p>
+            <p><span className={styles.highlight}>함께 정한 기한</span>은 반드시 지키려고 노력해요.</p>
+            <p><span className={styles.highlight}>파워 J 성향</span>으로 계획대로 행동합니다.</p>
             <p>
-              회사와 동료에게 긍정적 영향을 주는 일은 그 자체로{" "}
-              <span className={styles.highlight}>동기부여</span>가 됩니다.
-            </p>
-            <p>
-              <span className={styles.highlight}>문제해결에</span> 큰 성취감과
-              재미를 느낍니다.
-            </p>
-            <p>
-              <span className={styles.highlight}>함께 정한 기한</span>은 반드시
-              지키려고 노력해요.
-            </p>
-            <p>
-              <span className={styles.highlight}>파워 J 성향</span>으로 계획대로
-              행동합니다.
-            </p>
-            <p>
-              계획에 문제가 생겨도 당황하지 않는{" "}
-              <span className={styles.highlight}>강한 정신력</span>의
-              소유자입니다.
+              계획에 문제가 생겨도 당황하지 않는 <span className={styles.highlight}>강한 정신력</span>의 소유자입니다.
             </p>
           </div>
         </div>
