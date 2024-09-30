@@ -155,7 +155,7 @@
     display: none;
   }
 }
-/* 연락처 오픈버튼 제외한 주소텍스트 */
+/* 연락처 주소텍스트 */
 .contactAddr p {
   transform: translateY(10px);
   margin-bottom: 15px;

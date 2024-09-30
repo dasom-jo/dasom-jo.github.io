@@ -1,7 +1,7 @@
 // Home.js
 import AboutMe from "./containers/AboutMe";
 import Contact from "./containers/Contact";
-import Portfoile from "./containers/portfoile";
+import Portfoile from "./containers/Portfoilo";
 import Skill from "./containers/Skill";
 
 const Home = () => {
