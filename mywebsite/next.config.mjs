@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: "/dasom-jo.github.io/mywebsite",
+    basePath: "/mywebsite",
     trailingSlash: true,
-    assetPrefix: '/dasom-jo.github.io/mywebsite/'
+    assetPrefix: '/mywebsite'
   };
 
 export default nextConfig;
