@@ -10,7 +10,8 @@
     "build": "next build",
     "vercel-deploy": "next build && next export",
     "predeploy": "npm run build",
-    "deploy": "npm run build && npm run export && gh-pages -d out"
+    "deploy": "npm run build && npm run export && gh-pages -d out",
+    "export": "next export"
   },
   "module.exports": {
     "output": "export"
