@@ -9,7 +9,7 @@
   "lint": "next lint",
   "build": "next build",
   "vercel-deploy": "next build",
-  "predeploy": "npm run build",
+  "predeploy": "npm run static && npm run deploy",
   "deploy": "npm run build && gh-pages -d out",
   "export": "next export"
 },
