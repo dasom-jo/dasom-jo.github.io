@@ -19,7 +19,7 @@
 /* 프레임 줄 */
 .frameLine {
   position: relative;
-  background-image: url("../public/img/여러줄.svg");
+  background-image: url("../../../public/images/여러줄.svg");
   width: 400px;
   height: 600px;
   color: black;
@@ -30,7 +30,7 @@
 /* 프레임 */
 .frameImg {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background: url("../public/img/세로\ 프레임.svg") no-repeat;
+  background: url("../../../public/images/세로 프레임.svg") no-repeat;
   width: 600px;
   height: 500px;
   transform: translate(130%, -80%) scale(1.5); /* 초기상태 */
@@ -105,7 +105,7 @@
 }
 
 .mara {
-  background-image: url("../public/img/mara.png");
+  background-image: url("../../../public/images/mara.png");
   padding: 10px; /* 이미지와 보더 사이에 틈 */
   width: 120px;
   height: 100px;
@@ -117,7 +117,7 @@
 }
 
 .chall {
-  background-image: url("../public/img/chall.png");
+  background-image: url("../../../public/images/chall.png");
   padding: 10px;
   width: 120px;
   height: 100px;
@@ -128,7 +128,7 @@
   transform: scale(0.9);
 }
 .dog {
-  background-image: url("../public/img/dog.png");
+  background-image: url("../../../public/images/dog.png");
   padding: 10px;
   width: 120px;
   height: 100px;
@@ -140,7 +140,7 @@
 }
 
 .timer {
-  background-image: url("../public/img/timer.png");
+  background-image: url("../../../public/images/timer.png");
   padding: 10px;
   width: 120px;
   height: 100px;
@@ -151,7 +151,7 @@
   transform: scale(0.9);
 }
 .power {
-  background-image: url("../public/img/power.png");
+  background-image: url("../../../public/images/power.png");
   padding: 10px;
   width: 120px;
   height: 100px;

@@ -6,7 +6,7 @@
 }
 /* 프레임 기본 */
 .frameImg {
-  background-image: url("../public/img/대형프레임.svg");
+  background-image: url("../../../public/images/대형프레임.svg");
   position: absolute;
   width: 600px;
   height: 460px;
@@ -19,7 +19,7 @@
 /* 프레임줄 기본 좌측 */
 .frameLineLeft {
   position: absolute;
-  background-image: url("../public/img/줄1.svg");
+  background-image: url("../../../public/images/줄1.svg");
   transform-style: preserve-3d;
   min-width: 50px;
   height: 700px;
@@ -30,7 +30,7 @@
 /* 프레임줄 기본 우측 */
 .frameLineRight {
   position: absolute;
-  background-image: url("../public/img/줄1.svg");
+  background-image: url("../../../public/images/줄1.svg");
   transform-style: preserve-3d;
   min-width: 50px;
   height: 700px;

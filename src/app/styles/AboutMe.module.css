@@ -22,7 +22,7 @@
 /* 프레임 줄 */
 .frameLine {
   position: relative;
-  background-image: url("../public/img/여러줄.svg");
+  background-image: url("../../../public/images/여러줄.svg");
   width: 400px;
   height: 600px;
   color: black;
@@ -34,7 +34,7 @@
 /* 프레임 */
 .frameImg {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background: url("../public/img/대형프레임.svg") no-repeat;
+  background: url("../../../public/images/대형프레임.svg") no-repeat;
   width: 600px;
   height: 460px;
   transform: translate(5%, -10%) scale(0.6); /* 초기상태 */
@@ -65,7 +65,7 @@
 }
 /* 증명사진 */
 .framePhoto {
-  background-image: url("../public/img/조다솜1.jpg");
+  background-image: url("../../../public/images/조다솜1.jpg");
   width: 430px;
   height: 500px;
   transform: translate(-13%, -20%) scale(0.4);
@@ -82,7 +82,7 @@
 /* .howIWork 프레임 */
 .howIWork {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background: url("../public/img/세로\ 프레임.svg") no-repeat;
+  background: url("../../../public/images/세로 프레임.svg") no-repeat;
   width: 600px;
   height: 500px;
   transform: translate(33%, 20%) scale(1.67); /* 초기상태 */

@@ -31,7 +31,7 @@
 /* 프레임줄 */
 .contactFrameLine {
   position: absolute;
-  background-image: url("../public//img/줄1.svg");
+  background-image: url("../../../public/images/줄1.svg");
   width: 50px;
   height: 700px;
   top: -700px;
@@ -51,7 +51,7 @@
 /* 프레임 */
 .contactFrameImg {
   position: absolute; /* 겹치기 위해 절대 위치 사용 */
-  background: url("../public/img/대형프레임.svg") no-repeat;
+  background: url("../../../public/images/대형프레임.svg") no-repeat;
   width: 600px;
   height: 460px;
   top: -270px; /* 부모 요소의 세로 중간에 배치 */
