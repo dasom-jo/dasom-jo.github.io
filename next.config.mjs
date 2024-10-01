@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  assetPrefix:
-    process.env.NODE_ENV === "production" ? "/dasom-jo.github.io/" : "",
-  basePath: process.env.NODE_ENV === "production" ? "/dasom-jo.github.io" : "",
+  assetPrefix:"/dasom-jo.github.io/",
+  basePath:"/dasom-jo.github.io",
   trailingSlash: true,
 };
 
