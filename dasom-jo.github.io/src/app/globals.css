@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "HSBombaram21-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  font-family: "HSBombaram21-Regular";
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* 스크롤 - 모바일 */
+@media (max-width: 500px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 전체 배경이미지 */
+.bgImg {
+  z-index: 0;
+  /* 배경 이미지와 그라데이션을 함께 설정 */
+  background:
+    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)),
+    /* 회색 그라데이션 */ url("../app/public/img/전체배경.png") no-repeat; /* 배경 이미지 */
+  min-height: 100vh;
+  background-position: bottom; /* 이미지 위치 설정 */
+  background-size: cover; /* 배경 이미지 크기를 화면에 맞게 조정 */
+  display: flex;
+  justify-content: center; /* 중앙 정렬로 수정 */
+  align-items: top; /* 세로 중앙 정렬로 수정 */
+}
+
+grid-container {
+  display: inline;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

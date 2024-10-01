@@ -1,0 +1,163 @@
+@keyframes slogan {
+  0% {
+    opacity: 1; /* 슬로건이 완전히 보임 */
+  }
+  50% {
+    opacity: 0; /* 슬로건이 완전히 사라짐 */
+  }
+  100% {
+    opacity: 1; /* 슬로건이 다시 완전히 보임 */
+  }
+}
+
+/* 프레임과 줄 전체 */
+.frameBox {
+  min-width: 650px;
+  display: flex;
+}
+
+/* 프레임 줄 */
+.frameLine {
+  position: relative;
+  background-image: url("../public/img/여러줄.svg");
+  width: 400px;
+  height: 600px;
+  color: black;
+  z-index: 2;
+  display: flex;
+  transform: translate(190%, -150%);
+}
+/* 프레임 */
+.frameImg {
+  position: absolute; /* 겹치기 위해 절대 위치 사용 */
+  background: url("../public/img/세로\ 프레임.svg") no-repeat;
+  width: 600px;
+  height: 500px;
+  transform: translate(130%, -80%) scale(1.5); /* 초기상태 */
+  transition: 0.8s ease;
+  z-index: 5;
+}
+.frameTitle {
+  color: white;
+  font-size: 30px;
+}
+/* 포트폴리오 전체 박스 */
+.framePortfoilos {
+  position: relative; /* 상대 위치로 변경 */
+  max-width: 325px;
+  max-height: 400px; /* 높이 조정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  overflow-x: hidden; /* 가로 스크롤 비활성화 */
+  /* scroll-snap-type: y mandatory; 스크롤 스냅 활성화 */
+  display: flex; /* flexbox를 사용하여 이미지 정렬 */
+  flex-direction: column; /* 세로 방향으로 정렬 */
+}
+/* 각 포트폴리오 범위 */
+.PortfoiloBox {
+  max-width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  max-height: 150px;
+  padding: 10px;
+  align-items: center;
+  transform: translateX(10%);
+}
+.framePortfoiloText {
+  color: white;
+  font-size: 10px;
+  min-width: 140px;
+  margin-left: 10px;
+  text-wrap: wrap;
+  padding-top: 10px;
+}
+.framePortfoiloText p {
+  margin-bottom: 5px;
+}
+
+/* 전체 스크롤바 스타일 */
+.framePortfoilos::-webkit-scrollbar {
+  width: 4px; /* 스크롤바의 너비 */
+  height: 12px; /* 수평 스크롤바의 높이 */
+}
+
+/* 스크롤바의 배경 */
+.framePortfoilos::-webkit-scrollbar-track {
+  background: #2b2a2a; /* 스크롤바 트랙 배경색 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바 */
+.framePortfoilos::-webkit-scrollbar-thumb {
+  background: #71c4e0; /* 스크롤바 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바를 hover 할 때의 효과 */
+.framePortfoilos::-webkit-scrollbar-thumb:hover {
+  background: #887023; /* hover 시 색상 변경 */
+}
+
+/* 공통 이미지 스타일 */
+.imageCommon {
+  border-radius: 10px;
+  border: 3px solid #71c4e0;
+  box-sizing: border-box;
+}
+
+.mara {
+  background-image: url("../public/img/mara.png");
+  padding: 10px; /* 이미지와 보더 사이에 틈 */
+  width: 120px;
+  height: 100px;
+  background-size: cover; /* 이미지가 요소를 덮도록 조정 */
+  background-position: center; /* 이미지 가운데 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  border-radius: 5px; /* 이미지의 모서리 둥글게 */
+  transform: scale(0.9);
+}
+
+.chall {
+  background-image: url("../public/img/chall.png");
+  padding: 10px;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transform: scale(0.9);
+}
+.dog {
+  background-image: url("../public/img/dog.png");
+  padding: 10px;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transform: scale(0.9);
+}
+
+.timer {
+  background-image: url("../public/img/timer.png");
+  padding: 10px;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transform: scale(0.9);
+}
+.power {
+  background-image: url("../public/img/power.png");
+  padding: 10px;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transform: scale(0.9);
+}
