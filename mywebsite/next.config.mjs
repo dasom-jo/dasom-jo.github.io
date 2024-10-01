@@ -3,7 +3,7 @@ const nextConfig = {
     output: 'export',
     basePath: "/mywebsite",
     trailingSlash: true,
-    assetPrefix: '/mywebsite/_next/static/css/'
+    assetPrefix: 'dasom-jo.github.io/'
   };
 
 export default nextConfig;
