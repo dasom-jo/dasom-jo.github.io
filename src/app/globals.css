@@ -46,7 +46,7 @@ body {
   /* 배경 이미지와 그라데이션을 함께 설정 */
   background:
     linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)),
-    /* 회색 그라데이션 */ url("../app/public/img/전체배경.png") no-repeat; /* 배경 이미지 */
+    /* 회색 그라데이션 */ url("../../../public/images/전체배경.png") no-repeat; /* 배경 이미지 */
   min-height: 100vh;
   background-position: bottom; /* 이미지 위치 설정 */
   background-size: cover; /* 배경 이미지 크기를 화면에 맞게 조정 */
