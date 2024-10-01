@@ -3,7 +3,7 @@ const nextConfig = {
     output: 'export',
     basePath: "/mywebsite",
     trailingSlash: true,
-    assetPrefix: '/mywebsite/css'
+    assetPrefix: 'mywebsite/'
   };
 
 export default nextConfig;
