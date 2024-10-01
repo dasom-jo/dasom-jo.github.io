@@ -1,5 +1,5 @@
 "use client";
-import styles from "../style/AboutMe.module.css";
+import styles from "../styles/AboutMe.module.css";
 
 
 const AboutMe = () => {
