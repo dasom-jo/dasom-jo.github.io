@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import styles from "./Skill.module.css";
+import styles from "../style/Skill.module.css";
 
 const Skill = () => {
   const techItemRef = useRef(null);

@@ -1,7 +1,6 @@
 "use client";
-import { useRef, useEffect } from "react";
-import styles from "./Portfolio.module.css";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import styles from "../style/Portfolio.module.css";
+
 
 const Portfoile = () => {
   return (

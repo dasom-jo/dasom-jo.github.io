@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import styles from "./Contact.module.css";
+import styles from "../style/Contact.module.css";
 
 const Contact = () => {
   const clickFrameRef = useRef(null);
