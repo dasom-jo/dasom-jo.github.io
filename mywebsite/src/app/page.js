@@ -4,7 +4,7 @@ import Contact from "./containers/Contact";
 import Portfoile from "./containers/Portfoilo";
 import Skill from "./containers/Skill";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="grid-container">
       <Contact/>
@@ -15,4 +15,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default HomePage;
