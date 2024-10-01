@@ -10,7 +10,8 @@
     "build": "next build",
     "vercel-deploy": "next build && next export",
     "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles",
+    "export": "next export"
   },
   "module.exports": {
     "output": "export"
