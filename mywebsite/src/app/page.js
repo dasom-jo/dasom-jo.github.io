@@ -6,13 +6,15 @@ import Skill from "./containers/Skill";
 
 const HomePage = () => {
   return (
-    <div className="grid-container">
-      <Contact/>
-      <AboutMe />
-      <Skill/>
-      <Portfoile/>
-    </div>
+    <BrowserRouter basename={process.env.REACT_APP_BASE_URL}>
+      <div className="grid-container">
+        <Contact />
+        <AboutMe />
+        <Skill />
+        <Portfoile />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default HomePage;
