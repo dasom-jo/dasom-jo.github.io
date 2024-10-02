@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { useRef } from "react";
+// import Image from 'next/image';
+// import { useRef } from "react";
 import styles from "../styles/Skill.module.css";
 
 const Skill = () => {
