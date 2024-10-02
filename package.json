@@ -1,41 +1,24 @@
 {
-  "homepage": "https://dasom-jo.github.io",
-  "name": "dasom-jo.github.io",
+  "name": "jojo.github.io",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "start": "next start",
-  "lint": "next lint",
-  "build": "next build",
-  "vercel-deploy": "next build",
-  "predeploy": " npm run deploy",
-  "deploy": "npm run build && gh-pages -d out",
-  "export": "next export"
-},
-
-  "module.exports": {
-    "output": "export"
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^6.1.1",
-    "@mui/material": "^6.1.1",
-    "mysql2": "^3.11.3",
-    "next": "^14.2.13",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-lottie-player": "^2.1.0"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.14"
   },
   "devDependencies": {
-    "@types/mysql": "^2.15.26",
-    "@types/node": "22.7.4",
-    "@types/react": "18.3.10",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.13",
-    "gh-pages": "^6.1.1",
-    "prettier": "^3.3.3",
-    "prettier-eslint": "^16.3.0"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14"
   }
 }

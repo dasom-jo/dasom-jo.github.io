@@ -27,19 +27,10 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-#img
-img/*
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
-*.bmp
-*.tiff

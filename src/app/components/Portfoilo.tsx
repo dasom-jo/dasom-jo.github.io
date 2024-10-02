@@ -14,8 +14,8 @@ const Portfoile = () => {
         <div className={styles.framePortfoilos}>
           {/* 마라탕 포트포리오 */}
           <div className={styles.PortfoiloBox}>
-            <div class={styles.imageCommon}>
-              <div class={styles.mara}></div>
+            <div className={styles.imageCommon}>
+              <div className={styles.mara}></div>
             </div>
             <div className={styles.framePortfoiloText}>
               <p>제목 : 마라pick</p>
@@ -29,7 +29,7 @@ const Portfoile = () => {
           </div>
           {/* 챌린지지 */}
           <div className={styles.PortfoiloBox}>
-            <div class={styles.imageCommon}>
+            <div className={styles.imageCommon}>
               <div className={styles.chall}></div>
             </div>
             <div className={styles.framePortfoiloText}>
@@ -41,7 +41,7 @@ const Portfoile = () => {
           </div>
           {/* 어디가게 */}
           <div className={styles.PortfoiloBox}>
-            <div class={styles.imageCommon}>
+            <div className={styles.imageCommon}>
               <div className={styles.dog}></div>
             </div>
             <div className={styles.framePortfoiloText}>
@@ -56,7 +56,7 @@ const Portfoile = () => {
           </div>
           {/* 타이머 */}
           <div className={styles.PortfoiloBox}>
-            <div class={styles.imageCommon}>
+            <div className={styles.imageCommon}>
               <div className={styles.timer}></div>
             </div>
             <div className={styles.framePortfoiloText}>
@@ -68,7 +68,7 @@ const Portfoile = () => {
           </div>
           {/* 이미지카드  */}
           <div className={styles.PortfoiloBox}>
-            <div class={styles.imageCommon}>
+            <div className={styles.imageCommon}>
               <div className={styles.power}></div>
             </div>
             <div className={styles.framePortfoiloText}>

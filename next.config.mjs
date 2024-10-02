@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  assetPrefix:"/dasom-jo.github.io/",
-  basePath:"/dasom-jo.github.io",
-  trailingSlash: true,
-};
+    images: {
+        domains: ['www.google.com', 'tistory.com'], // 외부 도메인 추가
+      },
+  };
 
-export default nextConfig;
+  export default nextConfig;

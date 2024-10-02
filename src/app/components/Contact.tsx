@@ -3,28 +3,41 @@ import { useEffect, useRef, useState } from "react";
 import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
-  const clickFrameRef = useRef(null);
-  const clickFrameLineRef = useRef(null);
-  const clickTextRef = useRef(null);
+  const clickFrameRef = useRef<HTMLDivElement>(null);
+  const clickFrameLineRef = useRef<HTMLDivElement>(null);
+  const clickTextRef = useRef<HTMLDivElement>(null);
   // 프레임 클릭시
   const handleFrame = () => {
-    clickFrameRef.current.classList.add(styles.clickFrame); //프레임 하강
-    clickFrameLineRef.current.classList.add(styles.clickFrameLine); //프레임줄 하강
-    clickTextRef.current.classList.add(styles.clickFrameText); //텍스트 위치변경
-    setIsFrameClicked(true); //닫기버튼 등장
+    if (
+      clickFrameRef.current !== null &&
+      clickFrameLineRef.current !== null &&
+      clickTextRef.current !== null
+    ) {
+      clickFrameRef.current.classList.add(styles.clickFrame); // 프레임 하강
+      clickFrameLineRef.current.classList.add(styles.clickFrameLine); // 프레임줄 하강
+      clickTextRef.current.classList.add(styles.clickFrameText); // 텍스트 위치변경
+      setIsFrameClicked(true); // 닫기 버튼 등장
+    }
   };
+
   //닫기버튼
   const [isFrameClicked, setIsFrameClicked] = useState(false);
 
   const handleFrameClose = () => {
-    clickFrameRef.current.classList.remove(styles.clickFrame); //프레임 원상복귀
-    clickFrameLineRef.current.classList.remove(styles.clickFrameLine); //프레임줄 원상복귀
-    clickTextRef.current.classList.remove(styles.clickFrameText); //텍스트 위치 원상복귀
-    setIsFrameClicked(false); //닫기버튼 제거
+    if (
+      clickFrameRef.current !== null &&
+      clickFrameLineRef.current !== null &&
+      clickTextRef.current !== null
+    ) {
+      clickFrameRef.current.classList.remove(styles.clickFrame); //프레임 원상복귀
+      clickFrameLineRef.current.classList.remove(styles.clickFrameLine); //프레임줄 원상복귀
+      clickTextRef.current.classList.remove(styles.clickFrameText); //텍스트 위치 원상복귀
+      setIsFrameClicked(false); //닫기버튼 제거
+    }
   };
 
   // 클릭 이벤트로 닫기 버튼을 제어
-  const handleClose = (event) => {
+  const handleClose = (event:React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation(); // 부모 요소의 클릭 이벤트를 차단
     handleFrameClose(); // 프레임 닫기 처리
   };
