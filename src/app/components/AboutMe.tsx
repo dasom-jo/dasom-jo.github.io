@@ -1,4 +1,3 @@
-"use client";
 import styles from "../styles/AboutMe.module.css";
 
 
@@ -7,7 +6,6 @@ const AboutMe = () => {
     <div className={styles.frameBox}>
       {/* 프레임에 달린 줄 */}
       <div className={styles.frameLine}></div>
-
       {/* 프레임 이미지 */}
       <div className={styles.frameImg}>
         <h1 className={styles.frameTitle}>About Me</h1>

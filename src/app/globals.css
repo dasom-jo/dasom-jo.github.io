@@ -23,7 +23,8 @@ body {
   font-family: "HSBombaram21-Regular";
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100vw; /* 화면 너비의 90% */
+  height: 100vh; /* 화면 높이의 90% */
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -45,7 +46,7 @@ body {
   z-index: 0;
   /* 배경 이미지와 그라데이션을 함께 설정 */
   background:
-    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(5, 5, 5, 0)),
+    linear-gradient(to bottom, rgba(71, 71, 71, 0.7), rgba(0, 0, 0, 0)),
     /* 회색 그라데이션 */ url("../../public/images/전체배경.png") no-repeat; /* 배경 이미지 */
   min-height: 100vh;
   background-position: bottom; /* 이미지 위치 설정 */

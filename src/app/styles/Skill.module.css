@@ -4,6 +4,19 @@
   position: relative; /* 상대 위치로 설정 */
   z-index: 3; /* 연락처 프레임보다 뒤에 위치 */
 }
+
+.leftRebar {
+  position: absolute;
+  background-image: url("../../../public/images/배경\ 좌측철근.svg");
+  width: 60%;
+  height: 110%;
+  height: 700px;
+  top: -1000px;
+  transform: translate(-200%, 55%);
+  z-index: 1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 /* 프레임 기본 */
 .frameImg {
   background-image: url("../../../public/images/대형프레임.svg");

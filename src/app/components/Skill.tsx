@@ -4,6 +4,7 @@ import Image from "next/image";
 const Skill = () => {
   return (
     <div className={styles.frameBox}>
+      <div className={styles.leftRebar}></div>
       <div className={styles.frameImg}>
         <div className={styles.frameLineLeft}></div>
         <div className={styles.frameLineRight}></div>
@@ -85,7 +86,7 @@ const Skill = () => {
                 width={30}
                 height={40}
                 className={styles.roundImage}
-                style={{backgroundColor:"white"}}
+                style={{ backgroundColor: "white" }}
               />
               <span>Node.js</span>
             </div>
