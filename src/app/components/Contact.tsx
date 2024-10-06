@@ -45,14 +45,15 @@ const Contact = () => {
   return (
     // 전체
     <div className={styles.contactBox}>
-      {/* 프레임 줄 */}
-      <div className={styles.contactFrameLine} ref={clickFrameLineRef}></div>
+
       {/* 프레임 */}
       <div
         ref={clickFrameRef}
         className={styles.contactFrameImg}
         onClick={handleFrame}
       >
+              {/* 프레임 줄 */}
+      <div className={styles.contactFrameLine} ref={clickFrameLineRef}></div>
         {/* 프레임 내부 연락처 텍스트 */}
         <div className={styles.contactAddr} ref={clickTextRef}>
           <p>
@@ -71,15 +72,8 @@ const Contact = () => {
             </a>
           </p>
           <p>
-            전화 번호 : <a href="tel:+821044565247">010-4456-5247</a>
-          </p>
-          <p>
             메일 :{" "}
             <a href="mailto:jodasom0216@gmail.com">jodasom0216@gmail.com</a>
-          </p>
-          <p>
-            블로그 :{" "}
-            <a href="https://github.com/dasom-jo">jodasom0216@gmail.com</a>
           </p>
         </div>
         <div className={styles.contactBtn}>CONTACT CLICK!</div>

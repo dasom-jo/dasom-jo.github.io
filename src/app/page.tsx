@@ -17,7 +17,7 @@ const HomePage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jodasom</title>
       </Head>
-      <div className="grid-container">
+      <div>
         <Contact />
         <AboutMe />
         <Skill />

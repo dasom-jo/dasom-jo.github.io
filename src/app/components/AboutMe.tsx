@@ -19,9 +19,10 @@ const AboutMe = () => {
           #디테일 #도전 #책임
         </span>
         <span className={styles.slogan}>성장을 갈망하는 개발자</span>
-        {/* <div className={styles.open}>
-          <ArrowDownwardIcon/>
-        </div> */}
+        </div>
+        <div className={styles.open}>
+          {/* <ArrowDownwardIcon/> */}
+        </div>
         <div className={styles.howIWork}>
           <h2 className={styles.howTitle}>how I work ?</h2>
           <div  className={styles.howStory}>
@@ -38,7 +39,7 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-      </div>
+
     </div>
   );
 };

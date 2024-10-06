@@ -1,10 +1,10 @@
 "use client";
 import styles from "../styles/Portfolio.module.css";
 
-
 const Portfoile = () => {
   return (
     <div className={styles.frameBox}>
+      <div className={styles.rightRebar}></div>
       {/* 프레임에 달린 줄 */}
       <div className={styles.frameLine}></div>
 
@@ -52,30 +52,6 @@ const Portfoile = () => {
                 TailWind CSS, MySQL,ReactQurey
               </p>
               <p>설명 : 동물허용가능 매장 지도</p>
-            </div>
-          </div>
-          {/* 타이머 */}
-          <div className={styles.PortfoiloBox}>
-            <div className={styles.imageCommon}>
-              <div className={styles.timer}></div>
-            </div>
-            <div className={styles.framePortfoiloText}>
-              <p>제목 : 뽀로로</p>
-              <p>담당 :루틴관리 및 생성페이지</p>
-              <p>기술 : HTML, CSS, TypeScript,React.JS,Tailwind CSS</p>
-              <p>설명 : 타이머와 투두리스트</p>
-            </div>
-          </div>
-          {/* 이미지카드  */}
-          <div className={styles.PortfoiloBox}>
-            <div className={styles.imageCommon}>
-              <div className={styles.power}></div>
-            </div>
-            <div className={styles.framePortfoiloText}>
-              <p>제목 : 이미지카드</p>
-              <p>담당 : 개인프로젝트</p>
-              <p>기술 : HTML, CSS,JavaScript</p>
-              <p>설명 :JS와 CSS공부를 위한 이미지 카드</p>
             </div>
           </div>
         </div>
