@@ -1,8 +1,7 @@
 import styles from "../styles/Skill.module.css";
+import Image from "next/image";
 
 const Skill = () => {
-
-
   return (
     <div className={styles.frameBox}>
       <div className={styles.frameImg}>
@@ -15,39 +14,29 @@ const Skill = () => {
           <div className={styles.title}>languages</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpassauer1083.tistory.com%2F5&psig=AOvVaw3BBLTouQSdWAsAw51t--8U&ust=1727949666813000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIj5zKK474gDFQAAAAAdAAAAABAV"
-                alt="HTML"
-                width={30}
-                height={40}
-              /> */}
+              <Image src="/images/HTML.png" alt="HTML" width={30} height={40} />
               <span>HTML</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                alt="CSS"
-                width={30}
-                height={40}
-              /> */}
+              <Image src="/images/CSS.svg" alt="CSS" width={30} height={40} />
               <span>CSS</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s"
+              <Image
+                src="/images/JavaScript.png"
                 alt="JavaScript"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>JavaScript</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://i.namu.wiki/i/EY559r31H-um8uTtptPIbCZoBGxsumSlwEH0T_rA6WmxQq1UwqyAf3cJQJXN7Fv5CoEz0kv5CBXzjkkPU_XWig.svg"
+              <Image
+                src="/images/typescript.svg"
                 alt="TypeScript"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>TypeScript</span>
             </div>
           </div>
@@ -55,30 +44,31 @@ const Skill = () => {
           <div className={styles.title}>frameworks</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1MndL-Xp1JcnqaB0YOqTp6zDjrwYyGKsPA&s"
+              <Image
+                src="/images/React.png"
                 alt="React.js"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>React.js</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://images.velog.io/images/kim98111/post/59b25b73-7c6c-4820-83f5-c3107dfd97a2/nextjs.png"
+              <Image
+                style={{ backgroundColor: "white" }}
+                src="/images/Next.png"
                 alt="Next.js"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>Next.js</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+              <Image
+                src="/images/Node.webp"
                 alt="Node.js"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>Node.js</span>
             </div>
           </div>
@@ -86,48 +76,43 @@ const Skill = () => {
           <div className={styles.title}>librarys</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRtnECm8smWidVc32jR2bcuqczp64NhvzqfQ&s"
-                alt="Recoil"
-                width={30}
-                height={40}
-              /> */}
-              <span>Recoil</span>
-            </div>
-            <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ROtPTdQZE4JWt3wKm5q2GmpDKcRJ4C1gaA&s"
-                alt="Redux Toolkit"
-                width={30}
-                height={40}
-              /> */}
-              <span>Redux Toolkit</span>
-            </div>
-            <div className={styles.techItem}>
-              {/* <Image
-                src="https://t1.kakaocdn.net/kakao_tech/image/2022/06/images/01.png"
+              <Image
+                src="/images/React Query.png"
                 alt="React Query"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>React Query</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://velog.velcdn.com/images/hahahaday12/post/832ea253-9ec6-47c8-b5bc-0c94039f0a2a/image.webp"
-                alt="SCSS"
+              <Image
+                src="/images/Recoil.png"
+                alt="Recoil"
                 width={30}
                 height={40}
-              /> */}
+              />
+              <span>Recoil</span>
+            </div>
+            <div className={styles.techItem}>
+              <Image
+                src="/images/Redux Toolkit.png"
+                alt="Redux Toolkit"
+                width={30}
+                height={40}
+              />
+              <span>Redux Toolkit</span>
+            </div>
+            <div className={styles.techItem}>
+              <Image src="/images/SCSS.png" alt="SCSS" width={30} height={40} />
               <span>SCSS</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://velog.velcdn.com/images/jisoung/post/f40ccc5a-968b-4889-826f-13b06bb469ac/image.jpeg"
+              <Image
+                src="/images/TailwindCSS.png"
                 alt="TailwindCSS"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>TailwindCSS</span>
             </div>
           </div>
@@ -135,39 +120,22 @@ const Skill = () => {
           <div className={styles.title}>etc</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png"
-                alt="Bootstrap"
-                width={30}
-                height={40}
-              /> */}
-              <span>Bootstrap</span>
-            </div>
-            <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwbRH8dZHkXXXbZAowG0UA2_jDH9cnQ0fjQ&s"
-                alt="MUI"
-                width={30}
-                height={40}
-              /> */}
-              <span>MUI</span>
-            </div>
-            <div className={styles.techItem}>
-              {/* <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUX5LMRa7atIsNfl0nP3DaUaV4URhV0PHfA&s"
+              <Image
+                src="/images/Figma.png"
                 alt="Figma"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>Figma</span>
             </div>
             <div className={styles.techItem}>
-              {/* <Image
-                src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png"
+              <Image
+                style={{ backgroundColor: "white" }}
+                src="/images/MySQL.svg"
                 alt="MySQL"
                 width={30}
                 height={40}
-              /> */}
+              />
               <span>MySQL</span>
             </div>
           </div>
