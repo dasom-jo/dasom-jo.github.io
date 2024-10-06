@@ -14,11 +14,23 @@ const Skill = () => {
           <div className={styles.title}>languages</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
-              <Image src="/images/HTML.png" alt="HTML" width={30} height={40} />
+              <Image
+                src="/images/HTML.png"
+                alt="HTML"
+                width={30}
+                height={40}
+                className={styles.roundImage}
+              />
               <span>HTML</span>
             </div>
             <div className={styles.techItem}>
-              <Image src="/images/CSS.svg" alt="CSS" width={30} height={40} />
+              <Image
+                src="/images/CSS.svg"
+                alt="CSS"
+                width={30}
+                height={40}
+                className={styles.roundImage}
+              />
               <span>CSS</span>
             </div>
             <div className={styles.techItem}>
@@ -27,6 +39,7 @@ const Skill = () => {
                 alt="JavaScript"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>JavaScript</span>
             </div>
@@ -36,6 +49,7 @@ const Skill = () => {
                 alt="TypeScript"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>TypeScript</span>
             </div>
@@ -49,6 +63,7 @@ const Skill = () => {
                 alt="React.js"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>React.js</span>
             </div>
@@ -59,6 +74,7 @@ const Skill = () => {
                 alt="Next.js"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>Next.js</span>
             </div>
@@ -68,6 +84,8 @@ const Skill = () => {
                 alt="Node.js"
                 width={30}
                 height={40}
+                className={styles.roundImage}
+                style={{backgroundColor:"white"}}
               />
               <span>Node.js</span>
             </div>
@@ -81,6 +99,7 @@ const Skill = () => {
                 alt="React Query"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>React Query</span>
             </div>
@@ -90,6 +109,7 @@ const Skill = () => {
                 alt="Recoil"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>Recoil</span>
             </div>
@@ -99,11 +119,18 @@ const Skill = () => {
                 alt="Redux Toolkit"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>Redux Toolkit</span>
             </div>
             <div className={styles.techItem}>
-              <Image src="/images/SCSS.png" alt="SCSS" width={30} height={40} />
+              <Image
+                src="/images/SCSS.png"
+                alt="SCSS"
+                width={30}
+                height={40}
+                className={styles.roundImage}
+              />
               <span>SCSS</span>
             </div>
             <div className={styles.techItem}>
@@ -112,6 +139,7 @@ const Skill = () => {
                 alt="TailwindCSS"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>TailwindCSS</span>
             </div>
@@ -125,6 +153,7 @@ const Skill = () => {
                 alt="Figma"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>Figma</span>
             </div>
@@ -135,6 +164,7 @@ const Skill = () => {
                 alt="MySQL"
                 width={30}
                 height={40}
+                className={styles.roundImage}
               />
               <span>MySQL</span>
             </div>

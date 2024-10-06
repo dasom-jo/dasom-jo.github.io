@@ -10,7 +10,7 @@
   position: absolute;
   width: 600px;
   height: 460px;
-  transform: translate(-70%, -80%) rotateY(40deg) translateZ(80px) scale(0.8);
+  transform: translate(-70%, -80%) rotateY(40deg) translateZ(80px) scale(0.9);
   transform-style: preserve-3d; /* 3D 효과를 유지 */
   transition: 0.5s ease;
   z-index: 3;
@@ -44,8 +44,9 @@
 }
 .title {
   color: white; /* 텍스트 색상 */
-  font-size: 15px; /* 적절한 폰트 크기 설정 */
+  font-size: 17px; /* 적절한 폰트 크기 설정 */
 }
+
 /* 아이콘 전체 */
 .techStack {
   cursor: pointer;
@@ -56,6 +57,12 @@
   flex-wrap: wrap;
   gap: 10px;
   transform: translate(50px, 20px) translateZ(10px) rotateY(2deg);
+  border-radius: 50%;
+}
+.roundImage{
+  border-radius: 20%;
+  border: 3px solid #71c4e0;
+  background-color: #71c4e0;
 }
 /* 각 아이콘 DIV */
 .stackBox {
@@ -70,7 +77,7 @@
 .techItem {
   display: flex;
   align-items: center;
-  padding: 3px;
+  font-size: 11px;
   margin: 3px;
 }
 /* 아이콘 이미지 */
@@ -84,7 +91,7 @@
 /* 프레임 hover */
 .frameImg:hover {
   transform:  translate(-70%, -80%) rotateX(10deg) rotateY(40deg)
-    translateZ(80px) scale(0.8);
+    translateZ(80px) scale(0.9);
   transition: 0.1s ease;
 }
 /* 프레임 줄 hover 좌측 */
