@@ -24,11 +24,11 @@
 .frameLine {
   position: absolute;
   background-image: url("../../../public/images/여러줄.svg");
-  width: 25vw;
+  width: 400px;
   height: 600px;
   z-index: 2;
-  transform: translate(50%, -70%) scale(0.6); /* translate 대신 scale만 남김 */
-  transform-origin: center;
+  display: flex;
+  transform: translate(50%, -70%) scale(0.6);
 }
 
 .frameTitle {
@@ -117,7 +117,7 @@
   max-width: 250px;
   margin: 20px;
   font-size: 20px;
-  
+
 }
 
 .howStory .highlight {
