@@ -31,9 +31,9 @@
 .rightRebar {
   position: absolute;
   background-image: url("../../../public/images/배경\ 우측철근.svg");
-  width: 24%;
+  width: 23%;
   height: 110%;
-  transform: translate(200%, -80%);
+  transform: translate(210%, -80%);
 }
 
 /* 프레임 */
