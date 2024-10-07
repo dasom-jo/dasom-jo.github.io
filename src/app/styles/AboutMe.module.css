@@ -24,11 +24,11 @@
 .frameLine {
   position: absolute;
   background-image: url("../../../public/images/여러줄.svg");
-  width: 250px;
+  width: 25vw;
   height: 600px;
   z-index: 2;
-  transform: translate(90%, -70%) scale(0.6); /* translate 대신 scale만 남김 */
-  display: flex;
+  transform: translate(50%, -70%) scale(0.6); /* translate 대신 scale만 남김 */
+  transform-origin: center;
 }
 
 .frameTitle {
@@ -79,18 +79,45 @@
   transition: 0.8s ease;
   z-index: 0;
   color: white;
+  cursor: pointer;
+}
+.howTitle{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.openBtn{
+  cursor: pointer;
+  padding: 3px;
+  align-items: center;
+}
+.white{
+  color: white;
+}
+.gray{
+  color: gray;
+
+}
 .howStory {
   transform: translate(50px, 20%);
 }
 
-.howStory p {
-  transform: translate(-20px, -45px);
+.howText p {
+  transform: translate(-20px, -55px);
   margin-bottom: 20px;
   text-wrap: wrap;
   max-width: 250px;
   margin: 20px;
+}
+
+.iAmText p {
+  transform: translate(-20px, -50px);
+  text-wrap: wrap;
+  max-width: 250px;
+  margin: 20px;
+  font-size: 20px;
+  
 }
 
 .howStory .highlight {
