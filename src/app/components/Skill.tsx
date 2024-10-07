@@ -92,7 +92,7 @@ const Skill = () => {
             </div>
           </div>
           {/* 라이브러리 */}
-          <div className={styles.title}>librarys</div>
+          <div className={styles.title}>libraries</div>
           <div className={styles.stackBox}>
             <div className={styles.techItem}>
               <Image
