@@ -62,42 +62,34 @@
 
 /* 아이콘 전체 */
 .techStack {
-  font-size: 10px;
   color: white;
   display: grid;
-  grid-column: (4, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 수정된 부분 */
   flex-wrap: wrap;
   gap: 10px;
   transform: translate(50px, 20px) translateZ(10px) rotateY(2deg);
-  border-radius: 50%;
-}
-.roundImage{
-  border-radius: 20%;
-  border: 3px solid #71c4e0;
-  background-color: #71c4e0;
-}
-/* 각 아이콘 DIV */
-.stackBox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
-  height: 50px;
-  box-sizing: border-box;
+  width: 500px;
 }
 /* 아이콘 텍스트 */
 .techItem {
   display: flex;
   align-items: center;
-  font-size: 11px;
-  margin: 3px;
+  font-size: 15px;
+  margin: 5px;
 }
 /* 아이콘 이미지 */
 .techItem img {
-  width: 30px;
-  height: 40px;
+  width: 40px;
+  height: 50px;
   margin-right: 5px;
 }
+.roundImage{
+  border-radius: 20%;
+  border: 3px solid #71c4e0;
+  background-color: #71c4e0;
+
+}
+
 
 /* hover------------------------------------------------------------------------------------------------------------------- */
 /* 프레임 hover */

@@ -12,8 +12,7 @@ const Skill = () => {
         <h1 className={styles.mySkill}>My Skill </h1>
         <div className={styles.techStack}>
           {/* 언어 */}
-          <div className={styles.title}>languages</div>
-          <div className={styles.stackBox}>
+
             <div className={styles.techItem}>
               <Image
                 src="/images/HTML.png"
@@ -54,10 +53,6 @@ const Skill = () => {
               />
               <span>TypeScript</span>
             </div>
-          </div>
-          {/* 프레임워크 */}
-          <div className={styles.title}>frameworks</div>
-          <div className={styles.stackBox}>
             <div className={styles.techItem}>
               <Image
                 src="/images/React.png"
@@ -79,21 +74,6 @@ const Skill = () => {
               />
               <span>Next.js</span>
             </div>
-            <div className={styles.techItem}>
-              <Image
-                src="/images/Node.webp"
-                alt="Node.js"
-                width={30}
-                height={40}
-                className={styles.roundImage}
-                style={{ backgroundColor: "white" }}
-              />
-              <span>Node.js</span>
-            </div>
-          </div>
-          {/* 라이브러리 */}
-          <div className={styles.title}>libraries</div>
-          <div className={styles.stackBox}>
             <div className={styles.techItem}>
               <Image
                 src="/images/React Query.png"
@@ -144,10 +124,6 @@ const Skill = () => {
               />
               <span>TailwindCSS</span>
             </div>
-          </div>
-          {/* 그외 */}
-          <div className={styles.title}>etc</div>
-          <div className={styles.stackBox}>
             <div className={styles.techItem}>
               <Image
                 src="/images/Figma.png"
@@ -172,7 +148,6 @@ const Skill = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
