@@ -15,7 +15,9 @@ const Portfoile = () => {
           {/* 마라탕 포트포리오 */}
           <div className={styles.PortfoiloBox}>
             <div className={styles.imageCommon}>
-              <div className={styles.mara}></div>
+              <a href="https://github.com/dasom-jo/marpick-kiosk.git">
+                <div className={styles.mara}></div>
+              </a>
             </div>
             <div className={styles.framePortfoiloText}>
               <p>제목 : 마라pick</p>
@@ -30,7 +32,9 @@ const Portfoile = () => {
           {/* 챌린지지 */}
           <div className={styles.PortfoiloBox}>
             <div className={styles.imageCommon}>
-              <div className={styles.chall}></div>
+              <a href="https://github.com/dasom-jo/challeng-ver.2.git">
+                <div className={styles.chall}></div>
+              </a>
             </div>
             <div className={styles.framePortfoiloText}>
               <p>제목 : challen.gg ver.2</p>
@@ -42,7 +46,8 @@ const Portfoile = () => {
           {/* 어디가게 */}
           <div className={styles.PortfoiloBox}>
             <div className={styles.imageCommon}>
-              <div className={styles.dog}></div>
+              <a href="https://github.com/ARCHI-tecture/Eodiga-dog.git">
+              <div className={styles.dog}></div></a>
             </div>
             <div className={styles.framePortfoiloText}>
               <p>제목 : 어디가게</p>
